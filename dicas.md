@@ -14,6 +14,8 @@ onfigurar script dev, e de build e start(usado para producao)
 
 configurar o npm criando o npmrc, constatemente atualizar as dependencias, o bot tenta atualizar automaticamente, ele cria uma pull request falnado q precisa ser atualizado
 
-
+//variaveis ambiente
+//npm i dotenv
+//npm i zod
 
 
