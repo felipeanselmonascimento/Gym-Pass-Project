@@ -75,6 +75,16 @@ criado a pasta use-cases praticamente para a rota n criar o usuario, fizemos a I
 criar os patterns, primeiro pattern criado vai ser o repository pattern
 criar pasta repositories
 o primeiro arquivo foi prisma-(nome da entidade q to criando)
+qualquer coisa q for ser feito no banco vai ser interceptado pelo repositorio
+
+principios SOLID
+D - dependecy inversion principle
+
+meu caso de uso nao pode depender do repositorio
+meu usoCase vai receber o repositorio por parametro maioria em POO, no caso dentro do constructor
+
+
+
 
 
 
