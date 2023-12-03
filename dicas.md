@@ -54,6 +54,16 @@ docker compose up -d
 docker compose down --- deleta o container
 docker compose stop
 
+criado a pasta lib/prisma.ts para fazer a conexao com o banco de dados
+criado primeira rota de users 
+colocado parametro na conexao para mostrar a query em dev 
+export const prisma = new PrismaClient({
+    log: env.NODE_ENV === 'dev' ? ['query'] : []
+})
+
+
+//MVC [model, view, controller]
+criado pasta http para colocar os controller
 
 
 
