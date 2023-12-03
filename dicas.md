@@ -63,7 +63,12 @@ export const prisma = new PrismaClient({
 
 
 //MVC [model, view, controller]
-criado pasta http para colocar os controller
+criado pasta http para colocar os controller e criacao do arquivo routes.ts
+
+npm i bcryptjs biblioteca mais comum do node para fazer hash em senhas
+npm i @types/bcryptjs -D
+
+criado password_hash e colocamos um erro se email for igual
 
 
 
