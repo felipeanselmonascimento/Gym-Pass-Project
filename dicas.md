@@ -38,5 +38,25 @@ instalar o npm i @prisma/client dependencia de producao
 importar de dentro do app.ts > import { PrismaClient } from "@prisma/client";
 PrismaClient instanciar o obj pra fazer a conexao com o banco de dados
 
+$ docker run --name api-solid-pg -e POSTGRESQL_USERNAME=docker  -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
+alguns comando do docker
+docker ps retorna os container q ta rodando
+docker rm api-solid-pg
+docker ps -a todos os container q ja criei em algum momento
+docker start api-solid-pg
+
+colouqei manualmente a variavel ambiente, DATABASE_URL="postgresql://docker:docker@localhost:5432/apisolid?schema=public"
+npx prisma migrate dev
+npx prisma studio
+
+docker compose dita quais os container a aplicacao precisa criar pra q ela funcione
+docker compose up -d
+docker compose down --- deleta o container
+docker compose stop
+
+
+
+
+
 
 
