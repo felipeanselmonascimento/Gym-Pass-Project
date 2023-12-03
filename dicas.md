@@ -18,4 +18,25 @@ configurar o npm criando o npmrc, constatemente atualizar as dependencias, o bot
 //npm i dotenv
 //npm i zod
 
+// no tsconfig procurar por baseUrl and paths
+
+instalar o prisma
+npx prisma init
+baixado a extension prisma
+
+1 @ no model e a nivel de coluna
+2 @ e a nivel de tabela
+
+model User {
+  id String @id //toda tabela precisa ter um @id que e a chave primaria//
+
+  @@map("users")
+}
+
+npx prisma generate
+instalar o npm i @prisma/client dependencia de producao
+importar de dentro do app.ts > import { PrismaClient } from "@prisma/client";
+PrismaClient instanciar o obj pra fazer a conexao com o banco de dados
+
+
 
