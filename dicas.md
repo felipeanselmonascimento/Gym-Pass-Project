@@ -83,7 +83,8 @@ D - dependecy inversion principle
 meu caso de uso nao pode depender do repositorio
 meu usoCase vai receber o repositorio por parametro maioria em POO, no caso dentro do constructor
 
-
+criado a pasta users-repository.ts
+usado para criar a tipagem da interface do prisma(olhar pasta)
 
 
 
