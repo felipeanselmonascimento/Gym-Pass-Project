@@ -72,7 +72,9 @@ criado password_hash e colocamos um erro se email for igual
 
 criado a pasta use-cases praticamente para a rota n criar o usuario, fizemos a Interface
 
-
+criar os patterns, primeiro pattern criado vai ser o repository pattern
+criar pasta repositories
+o primeiro arquivo foi prisma-(nome da entidade q to criando)
 
 
 
