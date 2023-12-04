@@ -96,6 +96,7 @@ criado script para testes
 "test": "vitest run" --- roda todos os testes
 "test:watch": "vitest" --- roda e olha
 criado pasta register.spec.ts nos use-case
+testes unitarios nunca vai tocar em banco de dados e external da aplicacao
 
 
 
