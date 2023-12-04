@@ -89,7 +89,13 @@ usado para criar a tipagem da interface do prisma(olhar pasta)
 criado a pasta errors, tratado o erro do controller
 criar um error handler na nossa aplicacao, criado em app.ts, o proprio fastify ta fazendo a tratativa de erro
 
-
+instalar vitest
+npm i vitest vite-tsconfig-paths -D
+criar arquivo vite.config.ts
+criado script para testes
+"test": "vitest run" --- roda todos os testes
+"test:watch": "vitest" --- roda e olha
+criado pasta register.spec.ts nos use-case
 
 
 
