@@ -101,6 +101,8 @@ testes unitarios nunca vai tocar em banco de dados e external da aplicacao
 criado a pasta de repositories em memory
 e feito os testes da primeira etapa
 
+criado um script test coverage, coverage dando conflito com dependencia (TO DO), usei o force
+
 
 
 
