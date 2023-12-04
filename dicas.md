@@ -87,6 +87,9 @@ criado a pasta users-repository.ts
 usado para criar a tipagem da interface do prisma(olhar pasta)
 
 criado a pasta errors, tratado o erro do controller
+criar um error handler na nossa aplicacao, criado em app.ts, o proprio fastify ta fazendo a tratativa de erro
+
+
 
 
 
