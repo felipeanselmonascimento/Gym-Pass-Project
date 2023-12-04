@@ -98,6 +98,11 @@ criado script para testes
 criado pasta register.spec.ts nos use-case
 testes unitarios nunca vai tocar em banco de dados e external da aplicacao
 
+criado a pasta de repositories em memory
+e feito os testes da primeira etapa
+
+
+
 
 
 
