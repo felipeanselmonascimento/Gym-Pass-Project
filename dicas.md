@@ -86,6 +86,7 @@ meu usoCase vai receber o repositorio por parametro maioria em POO, no caso dent
 criado a pasta users-repository.ts
 usado para criar a tipagem da interface do prisma(olhar pasta)
 
+criado a pasta errors, tratado o erro do controller
 
 
 
