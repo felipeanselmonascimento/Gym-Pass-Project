@@ -103,6 +103,11 @@ e feito os testes da primeira etapa
 
 criado um script test coverage, coverage dando conflito com dependencia (TO DO), usei o force
 
+criado arquivo authenticate.ts, error authenticate
+
+
+
+
 
 
 
