@@ -105,6 +105,7 @@ criado um script test coverage, coverage dando conflito com dependencia (TO DO),
 
 criado arquivo authenticate.ts, error authenticate
 
+criado pasta authenticates.spec.ts, e tbm o authenticate controller
 
 
 
