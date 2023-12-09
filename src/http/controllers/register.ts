@@ -1,6 +1,5 @@
-import { PrismaUsersRepository } from "@/repositories/prisma/prisma-users-repository"
 import { UserAlreadyExists } from "@/use-cases/errors/user-already-exists.error"
-import { RegisterUseCase } from "@/use-cases/register"
+import { makeRegisterUseCase } from "@/use-cases/factories/make-register-use-case"
 import { FastifyRequest, FastifyReply } from "fastify"
 import { z } from "zod"
 
@@ -18,8 +17,7 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
 
     try {
 
-        const prismaUsersRepository = new PrismaUsersRepository()
-        const registerUsecase = new RegisterUseCase(prismaUsersRepository)
+        const registerUsecase = makeRegisterUseCase()
         await registerUsecase.execute({
             name,
             email,
@@ -30,7 +28,7 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
             return reply.status(409).send({ message: error.message }) //409 houve conflito
         }
 
-        throw error
+        throw error //deixa uma camada acima do controller tratar
     }
 
     return reply.status(201).send()

@@ -107,6 +107,12 @@ criado arquivo authenticate.ts, error authenticate
 
 criado pasta authenticates.spec.ts, e tbm o authenticate controller
 
+refatorado os test para as intancias
+
+factory pattern usado quando o codigo possui varias dependencias
+criando factory para os casos de uso 
+criada pasta chamada factory
+
 
 
 
