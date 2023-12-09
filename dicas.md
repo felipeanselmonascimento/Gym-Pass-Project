@@ -113,6 +113,8 @@ factory pattern usado quando o codigo possui varias dependencias
 criando factory para os casos de uso 
 criada pasta chamada factory
 
+criado caso de uso get-user-profile
+nao focar tanto em http no momento focar mais em use-case e test
 
 
 
