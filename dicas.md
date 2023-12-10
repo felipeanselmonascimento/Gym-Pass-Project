@@ -127,6 +127,8 @@ npm i dayjs
 
 criado Gymrepository
 
+criado a pasta utils para calcular a distancia de dois pontos
+
 
 
 
