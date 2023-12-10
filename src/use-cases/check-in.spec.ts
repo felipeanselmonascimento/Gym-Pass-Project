@@ -3,6 +3,8 @@ import { describe, beforeEach, test, expect, vi, afterEach } from "vitest"
 import { CheckInUseCase } from "./check-in"
 import { InMemoryGymsRepository } from "@/repositories/in-memory/in-memory-gyms-repository"
 import { Decimal } from "@prisma/client/runtime/library"
+import { MaxNumberOfCheckInsError } from "./errors/max-number-of-check-ins-error"
+import { MaxDistanceError } from "./errors/max-distance-error"
 
 
 let checkInsRepository: InMemoryCheckInsRepository
@@ -11,19 +13,29 @@ let sut: CheckInUseCase
 
 describe('Check In Use Case', () => {
 
-    beforeEach(() => {
+    beforeEach(async () => {
         checkInsRepository = new InMemoryCheckInsRepository()
         gymsRepository = new InMemoryGymsRepository()
         sut = new CheckInUseCase(checkInsRepository, gymsRepository)
 
-        gymsRepository.items.push({
+        await gymsRepository.create({
             id: 'gymdelloco',
-            title: 'Javascript Gym',
-            description: '',
-            phone: '',
-            latitude: new Decimal(0),
-            longitude: new Decimal(0)
+            title: 'seila',
+            description: 'description',
+            phone: '35422553',
+            latitude: 0,
+            longitude: 0
+
         })
+
+        // gymsRepository.items.push({
+        //     id: 'gymdelloco',
+        //     title: 'Javascript Gym',
+        //     description: '',
+        //     phone: '',
+        //     latitude: new Decimal(0),
+        //     longitude: new Decimal(0)
+        // })
 
         vi.useFakeTimers()
     })
@@ -64,7 +76,7 @@ describe('Check In Use Case', () => {
                 userLatitude: 0,
                 userLongitude: 0
             })
-        ).rejects.toBeInstanceOf(Error)
+        ).rejects.toBeInstanceOf(MaxNumberOfCheckInsError)
     })
 
     test('should be able to check in twice in different days', async () => {
@@ -108,7 +120,7 @@ describe('Check In Use Case', () => {
             userLatitude: 53.3598446,
             userLongitude: -2.7335209
         }),
-        ).rejects.toBeInstanceOf(Error)
+        ).rejects.toBeInstanceOf(MaxDistanceError)
 
         //53.3598446,-2.7335209
     })
