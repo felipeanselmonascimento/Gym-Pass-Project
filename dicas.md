@@ -118,6 +118,15 @@ nao focar tanto em http no momento focar mais em use-case e test
 
 criado caso de uso de check in
 
+metodologia de desenvolvimento chamada TDD - test driven development & mocking
+primeira etapa do TDD // red q significa erro no teste,
+proximo estado é o estado greeen
+proximo estado é o refactory
+
+
+
+
+
 
 
 
