@@ -123,7 +123,9 @@ primeira etapa do TDD // red q significa erro no teste,
 proximo estado é o estado greeen
 proximo estado é o refactory
 
+npm i dayjs
 
+criado Gymrepository
 
 
 
