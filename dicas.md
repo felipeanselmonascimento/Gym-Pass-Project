@@ -116,6 +116,8 @@ criada pasta chamada factory
 criado caso de uso get-user-profile
 nao focar tanto em http no momento focar mais em use-case e test
 
+criado caso de uso de check in
+
 
 
 
