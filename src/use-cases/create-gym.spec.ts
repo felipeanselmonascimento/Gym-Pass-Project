@@ -26,3 +26,7 @@ describe('Create Gym Use Case', () => {
         expect(gym.title).toEqual('seila')
     })
 })
+
+
+//ctrl + d
+// ctrl + shift + l

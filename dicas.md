@@ -129,6 +129,9 @@ criado Gymrepository
 
 criado a pasta utils para calcular a distancia de dois pontos
 
+criado pasta fetch-members em useCase
+fetch é mais de uma informacao, get apenas uma informacao
+
 
 
 
